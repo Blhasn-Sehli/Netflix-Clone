@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 150vh;
+    background-color: #0B0B0B;
+}
+
+nav{
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    letter-spacing: 1px;
+    background-color: #0B0B0B;
+    justify-content: space-between;
+    height: 4rem;
+}
+#logo{
+    width: 30%;
+    height: 1rem;
+    margin-left: 4%;
+}
+.mainHeader{
+    /* width: 100%;*/
+     display: flex; 
+     align-items: center;
+     margin: 2%;
+
+}
+.mainHeader ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 1rem;
+    padding: 0.5rem;
+}
+.mainHeader ul li{
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: x-small;
+}
+
+.mainHeader ul li:hover{
+    transform: scale(0.95);
+    transition: all 0.5s;
+    opacity: 0.8;  
+}
+
+
+.secondHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-right: 2%;
+
+}
+.secondHeader img{
+    width: 1.5rem; 
+    /* height: auto; */ 
+    
+}
+.material-symbols-outlined{
+    cursor: pointer;
+}
+
+#clickSearch {
+    color: white;
+    padding-left: 5%;
+    text-align: start;
+    background: none;
+    border: 1px solid white;
+    height: 2.2rem;  
+}
+.filmsContainer{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    height: 100vH;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 6px;
+    flex-wrap: wrap;
+    height: 50%;
+    transition: all 0.5s;
+    
+}
+
+.film{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.film:hover{
+    transform: scale(1.8);
+    transition: ease-out 0.5s;
+}
+.film img {
+
+    width: 12rem;
+}
+.filmInfo{
+    background-color: #1e1d1d;
+    
+    width: 100%;
+    height: 4rem;
+}
+#texts{
+    padding: 3%;
+    display: flex;
+    gap: 1rem;
+}
+
+
