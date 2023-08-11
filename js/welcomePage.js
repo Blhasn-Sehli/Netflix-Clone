@@ -1,3 +1,6 @@
+$('#logo').click(function () {
+     $(window).scrollTop(0)
+})
 //Search Animation
 $("#search").click(function () {
     $("#clickSearch").show(function () {
@@ -14,12 +17,168 @@ $(document).on("scroll",function () {
 //Arr Of Films
 var allFilms=[
     {
-        name:"Hunter x- Humter",
+        name:"Squid Game",
+        category:"Latest",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZDwjEyHc3J0bBlCG0Y3uSxgNI7eCF4dumBNQyT3gf1f_ofX9zZHXU5vxrs-_BuxqDtKjGURpxT-bXP1fRGv4wZ-vNYRBdaVOApkVjM7mKCfHlYNH1I7Hqn5rGWgEKzXI-2C.jpg?r=3ca",
+        date:"Coming Soon"
+    },
+    {
+        name:"The old guard",
+        category:"Films",
+        video:"https://www.netflix.com/watch/81038963?trackId=274435798&tctx=13%2C0%2Cb851bf95-c3b4-4d32-9978-1f8500f63499-9358550%2CNES_E653908434AC677C4E86A59CD23659-5CAD41286F6170-B4CE579FA3_p_1691710196764%2CNES_E653908434AC677C4E86A59CD23659_p_1691710196764%2C%2C%2C%2C81038963%2CVideo%3A81038963%2CminiDpPlayButton",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfFrbhIcECMSywzJalB3nM5I31zIqKdOkpcCWUCHsC3bf1Sj1-IcjE2FuZ-3Lq3WCV62DKYGnbg3M-A8t0QmwQmOPOGsOsm3ETpPOYpVO_zZS_W2J3p0MkPVrAGFR1C3D3_R.jpg?r=ab6"
+    },
+    {
+        name:"Fair Play",
+        category:"Latest",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfjHzLraCzjFjSShYr5uEACugQSyA-brnkAqAArKgaPByvvrrAJXgVUXxNVePwQGVvpQHgfVZa8ndbCifj2_T35obSOEmzAlbvAwqSHLS3aMBLkQw0R7fogTlzP8VwtDhb6y.jpg?r=802",
+        date:"Coming on 13 october"
+    },
+    {
+        name:"No Escape",
+        category:"Films",
+        video:"https://www.netflix.com/watch/80016589?trackId=274435798&tctx=13%2C1%2Cb851bf95-c3b4-4d32-9978-1f8500f63499-9358550%2CNES_E653908434AC677C4E86A59CD23659-5CAD41286F6170-B4CE579FA3_p_1691710196764%2CNES_E653908434AC677C4E86A59CD23659_p_1691710196764%2C%2C%2C%2C80016589%2CVideo%3A80016589%2CminiDpPlayButton",
+      
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXLbAh6hTvXBvuwB83FWfbLnDLUxE1fqqCGiZ9MAv_CxA1becaAtNgQJdNXuXU6WXxlN61xD-YPIaSeKekTViDnsPmDgo70TcP4.webp?r=c92"
+    },
+    {
+        name:"Five Feet Appart",
+        category:"Films",
+        video:"https://www.netflix.com/watch/80236271?trackId=250311567&tctx=10%2C1%2Cb851bf95-c3b4-4d32-9978-1f8500f63499-9358550%2CNES_E653908434AC677C4E86A59CD23659-17C36AE2FED9A0-B4CE579FA3_p_1691710196764%2CNES_E653908434AC677C4E86A59CD23659_p_1691710196764%2C%2C%2C%2C80236271%2CVideo%3A80236271%2CminiDpPlayButton",
+       
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXRKGSZdfA9NtzzTHfHAzGEt1aETloOhR-WdvDoM9D4cdf4bqS7ssXFQASb5b4m_0r-3GBguuxG680gc_Zo1jLZ6TrAvYW7nJuE.webp?r=0b8"
+    },
+    {
+        name:"White Men Want",
+        category:"Films",
+        video:"https://www.netflix.com/watch/81010973?trackId=250312413&tctx=1%2C1%2Cb851bf95-c3b4-4d32-9978-1f8500f63499-9354833%2CNES_E653908434AC677C4E86A59CD23659-52E5C7D441F6A6-B4CE579FA3_p_1691710196764%2CNES_E653908434AC677C4E86A59CD23659_p_1691710196764%2C%2C%2C%2C81010973%2CVideo%3A81010973%2CminiDpPlayButton",
+       
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABX6zeolC3_Kokj9uRswJRGGLHqV29KKCEnnbUvwS_tE1Fbry57PlH39OyWBO0yKWXI40mlI7BYtZ5F_GBasDS434T0WXF52r_OA.webp?r=e05"
+    },
+    {
+        name:"NowHere",
+        category:"Latest",
+        
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWIN6BHPemCkByvSf00yINrxhKrEvha9NqNNePfvn_SbKT7j3AMb4wX2YdpQU_ot6Cx5RADggS6_mNbmtm7v3BT1jnxeGvvTFo-N4KzUMbPwsgHrSiOP8TV4cuzXQr7xp3a-.jpg?r=eb5",
+        date:"Coming Soon"
+    },
+    {
+        name:"Batman Begins",
+        category:"Films",
+        video:"https://www.netflix.com/watch/70021642?trackId=250312413&tctx=1%2C2%2Cb851bf95-c3b4-4d32-9978-1f8500f63499-9354833%2CNES_E653908434AC677C4E86A59CD23659-52E5C7D441F6A6-B4CE579FA3_p_1691710196764%2CNES_E653908434AC677C4E86A59CD23659_p_1691710196764%2C%2C%2C%2C70021642%2CVideo%3A70021642%2CminiDpPlayButton",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfRcGN4zDWRG1IU6BJsw8uv_LB1oD9GQWybSJ5akxamnxJg7BUYo32nqyV3Y6DZcsEFIxiNrMvzo1RdlEMJO4jn-K77f0h3JjGo.webp?r=769"
+    },
+    {
+        name:"Mako",
+        category:"Films",
+        video:"https://www.netflix.com/watch/81616454?trackId=250311567&tctx=10%2C2%2C5543e8ac-ca48-4693-9c9d-98dc1cf73386-9656492%2CNES_E653908434AC677C4E86A59CD23659-17C36AE2FED9A0-B4CE579FA3_p_1691710196764%2CNES_E653908434AC677C4E86A59CD23659_p_1691710196764%2C%2C%2C%2C81616454%2CVideo%3A81616454%2CminiDpPlayButton",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYHDxqnwZT9A_Xh_W8WSdB47s_nf1Wla6-r5-NIRexSIT_JGaKCa3sWe5rEmJLkj2b146fKk0-9rww4zPdQupDXGhSuKxH11h6w.webp?r=254"
+    },
+    {
+        name:"21 Jump Street",
+        category:"Films",
+        video:"https://www.netflix.com/watch/70208247?trackId=251160987&tctx=4%2C2%2C5543e8ac-ca48-4693-9c9d-98dc1cf73386-9656492%2CNES_E653908434AC677C4E86A59CD23659-AFC6F469ABFC56-B4CE579FA3_p_1691710196764%2CNES_E653908434AC677C4E86A59CD23659_p_1691710196764%2C%2C%2C%2C70208247%2CVideo%3A70208247%2CminiDpPlayButton",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYeDF-NlGx6SI7VPzxZFSwlAZh6G1Cgl7y_mjZBDN7DZSIvIw1UbbALY9VALbh8OFB0PB1OzxfE41QaYTLW_TCFvyaPEUryLL-I.webp?r=993"
+    },
+    {
+        name:"Scarface",
+        category:"Films",
+        video:"https://www.netflix.com/watch/60029681?trackId=250326522&tctx=2%2C2%2C5543e8ac-ca48-4693-9c9d-98dc1cf73386-9652206%2CNES_E653908434AC677C4E86A59CD23659-311E2939CCF6CB-8EC67C6393_p_1691710815271%2CNES_E653908434AC677C4E86A59CD23659_p_1691710196764%2C%2C%2C%2C60029681%2CVideo%3A60029681%2CminiDpPlayButton",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYf4GuWO1d9pPY0QndpN0AoF3NM-VaqNnjdCQP68QtCcVG8VnHP8qyH--LPgasfolm6ooN3WIaZouoM61aW0g84gS8VhafOUUAQ.webp?r=e9b",
+        
+
+    },
+    {
+        name:"8 Mile",
+        category:"Films",
+        video:"https://www.netflix.com/watch/60024922?trackId=251210806&tctx=3%2C2%2C5543e8ac-ca48-4693-9c9d-98dc1cf73386-9652206%2CNES_E653908434AC677C4E86A59CD23659-6AEC6292EF6013-B4CE579FA3_p_1691710196764%2CNES_E653908434AC677C4E86A59CD23659_p_1691710196764%2C%2C%2C%2C60024922%2CVideo%3A60024922%2CminiDpPlayButton",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbvPzL7ugE7TAA5FOgXZFEpNObsIMUtIoYo44DTZJkdDjHV0HyGmwetJ9b_WQ5iSPEIP9XtDFay3gJB6oYeZ4VefEpMD54SsUAU.webp?r=410",
+        
+
+    },
+    {
+        name:"Dunkrik",
+        category:"Films",
+        video:"https://www.netflix.com/watch/80170278?trackId=251210806&tctx=3%2C1%2C5543e8ac-ca48-4693-9c9d-98dc1cf73386-8795100%2CNES_E653908434AC677C4E86A59CD23659-6AEC6292EF6013-B4CE579FA3_p_1691710196764%2CNES_E653908434AC677C4E86A59CD23659_p_1691710196764%2C%2C%2C%2C80170278%2CVideo%3A80170278%2CminiDpPlayButton",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABW0SWniHcfCAfgZ1qydOTtasBM4Mfs3joR6yU8HbFsXmsntm2IILLH54moUOwdPOQqITpEKPCOcYgu7u6x3GLbLY4kMSNextjaA.webp?r=29e",
+        
+
+    },
+    {
+        name:"Deep Vs Heard",
+        category:"Latest",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaV1avjbGRFPMmLYKTH5NsisnG5U57UgCOnrI1t_A-ZI52GsNgYzvALLq6UdPZXWgUQROFWwihkEMK56P5PAr0ZP046Rbk7KKzaYsVM4yS9r2NYZ-OxOx1EQWIJW4erUnQN0.jpg?r=aef",
+        date:"Coming On Wednseday"
+    },
+
+    {
+        name:"InterSteller",
+        category:"Films",
+        video:"https://www.netflix.com/watch/70305903?trackId=250326522&tctx=2%2C2%2C5543e8ac-ca48-4693-9c9d-98dc1cf73386-8795100%2CNES_E653908434AC677C4E86A59CD23659-311E2939CCF6CB-B4CE579FA3_p_1691710196764%2CNES_E653908434AC677C4E86A59CD23659_p_1691710196764%2C%2C%2C%2C70305903%2CVideo%3A70305903%2CminiDpPlayButton",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUBNRpUgXu0Jq0XovwqOlmh4SCQ-V2qOTg4NQAWN881al7jKukfHbfkFMyA7gTEK3oxtr-cGpxDpmeWkc21MT5jc-qmWkkFDXEQ.webp?r=c05",
+        
+
+    },
+    {
+        name:"Strangers Things",
         category:"Series",
-        video:"https://www.netflix.com/watch/70296674?trackId=14170056",
-        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUnBhk1iIZqh4p2JRqkBJzol8mOdF65JyfwIgi4RPgtPCoxaFnArb6_ljDlAhRmDD21EoEqY2HhipzxDqRNf2p7hHoOdJ3NQGBg.webp?r=c93",
-        season:"S3E43",
-        seasonName:"A x Shoking x Tardegy"
+        video:"https://www.netflix.com/watch/80077368?trackId=250312342",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUynBc_dIt2XTlLmpNY67U0xIhTJckCBRgZCGgCPPJoFapyWudHL7SKCuIglNAL4vFHLIFK2dYxGpvLHKwB_2TccfrE7TNhnoB8bWnLNry2IaQ4tv0rmBS_TTdyfNOGgarcS.jpg?r=c68",
+        season:"S1E1",
+        seasonName:"The Vanishing of Will Byres"
+    },
+    {
+        name:"Black Summer",
+        category:"Series",
+        video:"https://www.netflix.com/watch/80225012?trackId=250312342",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXwy0ATBS2BeKdj1WVD8_HXbps8MUkfn9znvWkorwkeMYwcmUlucFR8s8R-ui21ecECtJUDKEx8vrLmgCmeoi1O5tIvPeyyddDuxUQg3CVexvJdhX0QtaAoL9XqmOTnStlc7.jpg?r=a0e",
+        season:"S1E1",
+        seasonName:"Human Flow"
+    },
+    {
+        name:"Sly",
+        category:"Latest",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUfz5ozyKzWg4bqfxhWfMKr-zk2xCP8UFXczEwnFA0qQCrWhidO1rIUcrjjFkuKOX4Bqb0_qqSJS_N5BzD7NsdqCJmfUe7Oe5RQgSC2Y-qgF7n8wfKiuvbT2VK-afzWRAbeN.jpg?r=24a",
+        date:"Coming Soon"
+    },
+    {
+        name:"Money Heist",
+        category:"Series",
+        video:"https://www.netflix.com/watch/81012315?trackId=250328604",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfMnxcOAJOnP3gYxXstk4hMeW2eTAF__X8aVMdBEbnOti-j6aS6KUAaBXTgn-AhFqx3XEhJI-QdqBjI3EPB3-gygg8e6WemHA024xaqq1RfExuXix0OCntACK_g39ivJba8G.jpg?r=6c6",
+        season:"P4E4",
+        seasonName:"Pasodoble"
+    },
+    {
+        name:"Black Mirror",
+        category:"Series",
+        video:"https://www.netflix.com/watch/70264856?trackId=250328604",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf5OYBb3VD3SpbHhR49plv9I3i-ZZ-3il3eOaFypYHd78riVpFdJZ1VJ08wFhML8a2a1_tCD7dspl4cK-Oe35DO4MYRbxJZwj8m8QBemoNZ3mLHj3dR-pt2H5hNXFgRjEDNh.jpg?r=a34",
+        season:"S1E1",
+        seasonName:"The Entire History Of You"
+    },
+
+    {
+        name:"Ragnarok",
+        category:"Series",
+        video:"https://www.netflix.com/watch/81263491?trackId=251107751",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYGSRaX58eH2yh0xf9zqmRq2Or1z17lKiS8Lh96mYbuKxv4o3cxH1PkxaBUO1Y7F2Y9vUw0XWgas2FR4-rJBd4ZobTLt7asFlJDoPCNx2uBvJk4P3keGL7E8KkKtIi0foXtt.jpg?r=ebb",
+        season:"S1E1",
+        seasonName:"Brothers In Arms"
+    },
+    {
+        name:"Narcos",
+        category:"Series",
+        video:"https://www.netflix.com/watch/80025320?trackId=251168955",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTBULERiv7XS-9JjumGJWZYKbyjnFDUCQAYlzL82ZT6HAT35de3xrtlsfLF-yMthAQtMi8PrXGuV2cTtB8ruMz0nHY_yglKp_42UPPAdzmIryHhldCS1F9XoBSKeZ1wkIasZ.jpg?r=9b3",
+        season:"S1E8",
+        seasonName:"La Grand Metira"
+    },
+    {
+        name:"Akun Kun",
+        category:"Latest",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYGWkgQbwM1X3sPJdnwwIDMf6BXZieo8IJT_vLiDyFIYtduOULY3fRnDkepGNuKjRzuLa8Lq3uP-beZSdMtcgg5My1Jn9zjqGo7_5pJh5EpNCbRheTBvBcgrx4ir218-I2hR.jpg?r=1f0",
+        date:"Coming Soon"
     },
     {
         name:"H",
@@ -29,6 +188,12 @@ var allFilms=[
         season:"S3E19",
         seasonName:"Acting President"
 
+    },
+    {
+        name:"Allegiant",
+        category:"Latest",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVyVFH5UEIK_m9BkZYhGIwYl_TU3ebprRamf_ISCv5WHPvXkphBfizf_PKPbUyflUIqYSgcIpT6QQIVK0twsXh44Udbk8VJHDNU.webp?r=bc0",
+        date:"Coming On 7 September"
     },
     {
         name:"Outer Banks",
@@ -104,6 +269,12 @@ var allFilms=[
 
     },
     {
+        name:"Body Problem",
+        category:"Latest",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWcOk2I7ygvPzBN8NGQidQa-Cz5p2mJ1ZgNMpHrmQsbqtp3d2uYbGWkb1LLX603IUIcMOozSSenRxIRBVOmmtAvGJXGHwMuMrRdBmEXXgxFwR3u7NKNzwemQZRU2lajpIlqC.jpg?r=b27",
+        date:"Coming 2024"
+    },
+    {
         name:"Control Z",
         video:"https://www.netflix.com/watch/81037899?trackId=14183673",
         category:"Series",
@@ -167,12 +338,7 @@ var allFilms=[
         src:"https://occ-0-4609-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbM8D7z3GumHGEs85g5tkJxzy-BOq_pzWj_eZSYaRQ9K-6IG17HMW7KIgaQqUZCw1ceaksqAjID_9hCVQ0FWlvVxyzlEO3uM_0o.webp?r=69f",
         date: "Coming on 18 August ",
     },
-    {
-        name:"Heart Stone",
-        category:"Latest",
-        src:"https://occ-0-4609-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYwvutSCfssv699pC89tq1023I_BSEGhhFp-84iaVNXcPQJW13SkAtBGNECESIdNHQCFqNT1T5PpxJ7bVAnCDNkyVuUHlo7G_JWef5bRJqBUZKO81DdKl5A12EpNxcKXIxcN.jpg?r=db1",
-        date:"Coming On Friday",
-    },
+   
     {
         name:"Bounty Hunter S2",
         category:"Latest",
@@ -180,10 +346,16 @@ var allFilms=[
         date:"Coming On 17 August"
     },
     {
+        name:"10 Days Of Bad Man",
+        category:"Latest",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWcOk2I7ygvPzBN8NGQidQa-Cz5p2mJ1ZgNMpHrmQsbqtp3d2uYbGWkb1LLX603IUIcMOozSSenRxIRBVOmmtAvGJXGHwMuMrRdBmEXXgxFwR3u7NKNzwemQZRU2lajpIlqC.jpg?r=b27",
+        date:"Coming 2024"
+    },
+    {
         name:"Mask Girl",
         category:"Latest",
-        src:"https://occ-0-4609-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb6BGHRrz2K6mF8RBTgEUZM-Cc6NfWDEAHKddYW3h9YZh4qxuxvBr74bMIufLJytPxrDRMMLmYMgXaqge_OOwaqAqUJMsZ4DWYVmWZ8GmLaGivLL5Ua_LVnFYAVTrG8HdLlT.jpg?r=b3d",
-        date:"Cming On 18 August"
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdMlu8wUi28uP4Y0KF5LaurMnKn_PQkeSD6kMuVQapaaahUz-kaM87TdOPWWtrqdOU85QKSAA4Se2Nl3hlZcl0TpfFZWwtRajqYiQ2YVxRH1RFF5jJM6PO2Xy6th-HwIpzX8.jpg?r=989",
+        date:"Coming On 18 August"
     },
     {
         name:"Hunter x- Humter",
@@ -191,6 +363,12 @@ var allFilms=[
         season:"S3E43",
         seasonName:"A x Shoking x Tardegy"
 
+    },
+    {
+        name:"Love At Fiest Sight ",
+        category:"Latest",
+        src:"https://occ-0-7200-778.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABa-qCt-SpVMukoUcEY1_NKXVWrr1GoAwRep5VYJPfWAgE50PBjveJxMV1sbTzM4p_PZpXnbQFXANXi7wZ63qYvzozV_lySQiPN8SPqkgX9H6KS26qhJN89Q5ycQtXrFw77q7.jpg?r=dfa",
+        date:"Coming Soon"
     },
     
    
@@ -302,8 +480,7 @@ $("#Films").click(function () {
 }) 
 //filter Latest Films
 var latestFilms=filter(allFilms,function (element) {
-return element.category==="Latest"
-    
+return element.category==="Latest"  
 })
 //add Latest Films to the nav Latest
 $("#Latest").click(function () {
@@ -311,6 +488,7 @@ $("#Latest").click(function () {
     each(latestFilms,function (elm,i) {
         inject(elm.src,elm.video,i,elm.season!==undefined?elm.season:elm.date!==undefined?elm.date:"Watch Now 🍿",elm.seasonName!==undefined?elm.seasonName:"")
     })
+    
 })
 
 
@@ -329,11 +507,14 @@ each(allFilms,function (elm,i) {
     })
 })
 //My List Nav 
+var gettedItems=JSON.parse(localStorage.getItem("myList"))
 $("#MyList").click(function () {
     $(".filmsContainer").empty()
-    each(myListFilms,function (elm,i) {
-        inject(elm.src,elm.video,i,elm.season!==undefined?elm.season:elm.date!==undefined?elm.date:"Watch Now 🍿",elm.seasonName!==undefined?elm.seasonName:"")
-    })
+    if (gettedItems.length!==0) {
+        each(gettedItems,function (elm,i) {
+            inject(elm.src,elm.video,i,elm.season!==undefined?elm.season:elm.date!==undefined?elm.date:"Watch Now 🍿",elm.seasonName!==undefined?elm.seasonName:"")
+        })
+    }
 }) 
 
 
@@ -351,15 +532,13 @@ $("#search").click(function () {
     if(elm.name.toLowerCase().indexOf(query.toLowerCase())!==-1){
         return elm
     }
-    
+    $("#clickSearch").val("")
    })
-   console.log(response);
-    // // each(,function (elm,i) {
-    //     inject(elm.src,elm.video,i,elm.season!==undefined?elm.season:elm.date!==undefined?elm.date:"Watch Now 🍿",elm.seasonName!==undefined?elm.seasonName:"")
-    // })
-
-
-    
+   if (response.length!==0) {
+         each(response,function (elm,i) {
+            inject(elm.src,elm.video,i,elm.season!==undefined?elm.season:elm.date!==undefined?elm.date:"Watch Now 🍿",elm.seasonName!==undefined?elm.seasonName:"")
+        })
+   }
 })
 
 
