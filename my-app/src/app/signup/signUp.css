@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    width: 100%;
+    background-image:  linear-gradient(rgb(0, 0, 0,70%),rgb(0, 0, 0,70%)), url("../images/homePage/landingImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+#logo{
+    width: 18%;
+    height: 6rem;
+}
+.signUp--container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#010103;
+    opacity: 0.7;
+    width: 30%;
+    color: white;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+.signUp--container input{
+    position: relative;
+    width: 80%;
+    border-radius: 4px;
+    background: none;
+    border: none;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: grey;
+    opacity: 1;
+    height: 2.5rem;
+    
+}
+.inputs{
+    position: absolute;
+    top: 20%;    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+.signUp--container h1{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    font-weight: 500;
+    font-family:  Helvetica, sans-serif;
+}
+.inputs button{
+    margin-top: 2rem;
+    background-color:#E50914 ;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    font-family:  Helvetica, sans-serif;
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 80%;
+}
+.inputs h4{
+    display: none;
+    font-size: small;
+    color: #E87C03;
+    text-align: start;
+}
+span{
+    color: gray;
+    font-size: medium;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    margin-top: 55%;
+
+}
+span a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+
+}
+span a:hover{
+    text-decoration: underline;
+
+}
+p{
+    color: gray;
+    margin-top: 1rem;
+    width: 70%;
+}
+
+
+
+

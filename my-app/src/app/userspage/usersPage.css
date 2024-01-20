@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141414;
+
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background: red; */
+
+    height: 45%;
+    width: 80%;
+    text-align: center;
+}
+main span{
+    font-size: 3.5vw;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.cards{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+.userCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    gap: 1rem;
+    color: lightgray;
+    font-family:Helvetica, sans-serif;
+}
+img:hover{
+    border: 3px solid white;
+}
+.userCard img{
+    border-radius: 7px;
+    width: 90%;
+    height: 9rem;
+}
+
