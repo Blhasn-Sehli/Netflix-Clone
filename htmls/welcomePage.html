@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="shortcut icon" href="../images/netflix_logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../css/welcomePage.css">
-    <script src='https://code.jquery.com/jquery-2.2.4.js'></script> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />   
+    <script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
+
 <body>
-        <nav>
-            <div class="mainHeader">
-                <img id="logo" src="../images/homePage/logo.png" alt="" srcset="">
-                <ul> 
-                    <li id="Home">Home</li>
-                    <li id="Series">Series</li>
-                    <li id="Films">Films</li>
-                    <li id="Latest">Latest</li>
-                    <li id="MyList">MyList</li>
-                </ul>
-            </div>
-            <div class="secondHeader">
-                
-                <span id="search" class="material-symbols-outlined">search</span>
-                <input style="display: none;" id="clickSearch" type="text" placeholder="Titles,people,genres" >
-                <!-- will be added Soon -->
-                <span class="material-symbols-outlined">notifications</span>
-                <span  class="material-symbols-outlined">
-                    <img src="../images/usersPage/user1.jpg" alt="" srcset="">
-                    arrow_drop_down
-                    </span>
-            </div>
-        </nav>
-        <div class="videoContainer">
-            <video  width="100%"    autoplay >
-                <source  src="../videos/Peaky Blinders _ Season 5 Trailer _ Netflix.mp4" >
-            </video>
+    <nav>
+        <div class="mainHeader">
+            <img id="logo" src="../images/homePage/logo.png" alt="" srcset="">
+            <ul>
+                <li id="Home">Home</li>
+                <li id="Series">Series</li>
+                <li id="Films">Films</li>
+                <li id="Latest">Latest</li>
+                <li id="MyList">MyList</li>
+            </ul>
         </div>
-        <div class="filmsContainer"></div> 
-       
+        <div class="secondHeader">
+
+            <span id="search" class="material-symbols-outlined">search</span>
+            <input style="display: none;" id="clickSearch" type="text" placeholder="Titles,people,genres">
+            <!-- will be added Soon -->
+            <span class="material-symbols-outlined">notifications</span>
+            <span class="material-symbols-outlined">
+                <img src="../images/usersPage/user1.jpg" alt="" srcset="">
+                arrow_drop_down
+            </span>
+        </div>
+    </nav>
+    <div class="videoContainer">
+        <video width="100%" autoplay>
+            <source src="../videos/Peaky Blinders _ Season 5 Trailer _ Netflix.mp4">
+        </video>
+    </div>
+    <div class="filmsContainer"></div>
+
     <script src="../js/welcomePage.js"></script>
 </body>
+
 </html>
